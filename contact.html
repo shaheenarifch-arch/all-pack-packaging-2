@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | All Pack Luxury Packaging Studio, London</title>
+  <meta name="description" content="Start a bespoke packaging project with All Pack. Send a brief, call or visit our London studio. We reply to every enquiry within one working day.">
+  <meta property="og:title" content="Contact | All Pack Luxury Packaging Studio, London">
+  <meta property="og:description" content="Tell us about your product and your brand. All Pack replies within one working day with initial thoughts and a path to a first prototype.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#1a1a1a">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .contact-layout { display: grid; gap: clamp(2.5rem, 1rem + 5vw, 6rem); grid-template-columns: 1fr; align-items: start; }
+    @media (min-width: 960px) { .contact-layout { grid-template-columns: 1.3fr 0.7fr; } }
+    .hours { list-style: none; display: grid; gap: 0; border-top: 1px solid var(--line); margin-bottom: 1.5rem; }
+    .hours li { display: flex; justify-content: space-between; gap: 1rem; padding: 0.9rem 0; border-bottom: 1px solid var(--line); }
+    .hours li span:last-child { color: var(--muted); text-align: right; }
+    .map-panel { position: relative; aspect-ratio: 4 / 3; border: 1px solid var(--line); overflow: hidden;
+      background: radial-gradient(70% 60% at 55% 45%, rgba(212, 175, 143, 0.2), transparent 70%), linear-gradient(160deg, #2a2826, #151515); color: var(--gold); }
+    .map-panel svg { width: 100%; height: 100%; }
+    .map-caption { position: absolute; left: 1rem; bottom: 1rem; right: 1rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+      font-size: var(--step--1); letter-spacing: 0.14em; text-transform: uppercase; color: var(--ivory); }
+    .form-wrap .thanks:focus { outline: 2px solid var(--gold); outline-offset: 4px; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="All Pack, home">
+        <svg class="brand-mark" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+          <rect x="3" y="3" width="34" height="34"/>
+          <path d="M20 8 32 20 20 32 8 20Z"/>
+          <path d="M20 8v24M8 20h24" stroke-opacity=".45"/>
+        </svg>
+        <span class="brand-name">All <span>Pack</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="services.html">Services</a></li>
+          <li><a class="nav-link" href="contact.html" aria-current="page">Contact</a></li>
+          <li class="nav-cta"><a class="btn btn--sm" href="contact.html">Start a project</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Intro -->
+    <section class="page-hero" aria-labelledby="contact-title">
+      <div class="container">
+        <p class="eyebrow reveal">Contact</p>
+        <h1 id="contact-title" class="reveal" style="--delay:.08s">Let's begin with <em>your brief.</em></h1>
+        <p class="lead reveal" style="--delay:.16s">Whether you have a finished dieline or only a feeling about how your product should be unboxed, we would like to hear it. Share a few details below and a member of our studio will respond personally within one working day.</p>
+      </div>
+    </section>
+
+    <!-- Form + details -->
+    <section class="section theme-dark" aria-labelledby="form-title">
+      <div class="container">
+        <div class="contact-layout">
+          <div class="form-wrap reveal">
+            <p class="eyebrow">Project enquiry</p>
+            <h2 id="form-title" style="font-size:var(--step-3)">Tell us about <em>your product.</em></h2>
+
+            <form class="form" id="enquiry-form" action="#" method="post" novalidate>
+              <div class="field-row">
+                <div class="field">
+                  <label for="f-name">Full name</label>
+                  <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="Your name">
+                </div>
+                <div class="field">
+                  <label for="f-company">Brand or company</label>
+                  <input id="f-company" name="company" type="text" autocomplete="organization" required placeholder="Your brand">
+                </div>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="f-email">Email</label>
+                  <input id="f-email" name="email" type="email" autocomplete="email" required placeholder="you@brand.com">
+                </div>
+                <div class="field">
+                  <label for="f-phone">Phone (optional)</label>
+                  <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+44 ...">
+                </div>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="f-type">Type of packaging</label>
+                  <select id="f-type" name="type" required>
+                    <option value="">Select one</option>
+                    <option>Rigid gift boxes</option>
+                    <option>Carrier bags</option>
+                    <option>Tubes and cylinders</option>
+                    <option>Jewellery and watch cases</option>
+                    <option>Limited-edition or press kits</option>
+                    <option>Not sure yet</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="f-qty">Approximate quantity</label>
+                  <select id="f-qty" name="quantity">
+                    <option value="">Select one</option>
+                    <option>Under 500</option>
+                    <option>500 to 2,000</option>
+                    <option>2,000 to 10,000</option>
+                    <option>10,000 or more</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field">
+                <label for="f-message">Your brief</label>
+                <textarea id="f-message" name="message" required placeholder="Your product, your audience, the feeling you want the packaging to create, and any deadline we should know about."></textarea>
+              </div>
+              <p class="form-note">Submitting opens your email app with your brief ready to send to our studio. Nothing is stored or tracked on this site.</p>
+              <div class="btn-row">
+                <button class="btn" type="submit">Send enquiry
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+                </button>
+              </div>
+            </form>
+
+            <div class="thanks" id="thanks" hidden tabindex="-1" role="status">
+              <h3>Thank you, your brief is ready.</h3>
+              <p>Your email app should now be open with your enquiry written out for you. Press send there and it reaches our studio directly. If nothing opened, write to us at <a href="mailto:hello@allpack.co">hello@allpack.co</a> or call <a href="tel:+442079460321">+44 20 7946 0321</a>.</p>
+              <button class="btn btn--ghost btn--sm" type="button" id="again">Write another enquiry</button>
+            </div>
+          </div>
+
+          <aside class="reveal" style="--delay:.12s" aria-labelledby="direct-title">
+            <p class="eyebrow">Direct lines</p>
+            <h2 id="direct-title" style="font-size:var(--step-2)">Prefer to <em>talk?</em></h2>
+            <ul class="details">
+              <li>
+                <span class="label">Email</span>
+                <a href="mailto:hello@allpack.co">hello@allpack.co</a>
+              </li>
+              <li>
+                <span class="label">Telephone</span>
+                <a href="tel:+442079460321">+44 20 7946 0321</a>
+              </li>
+              <li>
+                <span class="label">New projects</span>
+                <p style="margin:0;color:var(--muted)">Ask for the Client Studio team. Please have your product dimensions and target quantity to hand if you can.</p>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & hours -->
+    <section class="section section--deep theme-dark" aria-labelledby="visit-title">
+      <div class="container">
+        <div class="split">
+          <div class="reveal">
+            <p class="eyebrow">The studio</p>
+            <h2 id="visit-title" style="font-size:var(--step-3)">Visit us in <em>the City.</em></h2>
+            <p class="lead" style="margin-bottom:1.5rem">Our design studio and sample room sit on a quiet lane a few minutes from Liverpool Street. Come and handle our material library, compare foils against your own artwork and see finished work in person.</p>
+            <address style="font-style:normal;margin-bottom:2rem;font-family:var(--font-display);font-size:var(--step-1);line-height:1.6">
+              All Pack Ltd<br>14 Mercer Lane<br>London EC2A 3QH
+            </address>
+            <ul class="hours" aria-label="Opening hours">
+              <li><span>Monday to Friday</span><span>9:00 to 18:00</span></li>
+              <li><span>Saturday</span><span>By appointment</span></li>
+              <li><span>Sunday</span><span>Closed</span></li>
+            </ul>
+            <p class="form-note">Sample room visits are by appointment so we can prepare materials relevant to your project. Times are UK local time.</p>
+          </div>
+
+          <div class="map-panel reveal" style="--delay:.12s" role="img" aria-label="Stylised map showing the All Pack studio on Mercer Lane, London">
+            <svg viewBox="0 0 400 300" fill="none" stroke="currentColor" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+              <g stroke-opacity=".28" stroke-width="1">
+                <path d="M-10 60 L410 30"/>
+                <path d="M-10 130 L410 120"/>
+                <path d="M-10 210 L410 240"/>
+                <path d="M70 -10 L90 310"/>
+                <path d="M190 -10 L200 310"/>
+                <path d="M300 -10 L280 310"/>
+                <path d="M-10 270 L410 180" stroke-opacity=".18"/>
+              </g>
+              <path d="M-10 160 C80 150 140 190 210 170 S340 120 410 140" stroke-opacity=".5" stroke-width="10" stroke-linecap="round" style="stroke:rgba(245,241,237,.06)"/>
+              <rect x="104" y="140" width="72" height="52" fill="rgba(245,241,237,.04)" stroke-opacity=".3"/>
+              <rect x="214" y="72" width="64" height="40" fill="rgba(245,241,237,.04)" stroke-opacity=".3"/>
+              <rect x="212" y="188" width="70" height="36" fill="rgba(245,241,237,.04)" stroke-opacity=".3"/>
+              <circle cx="200" cy="125" r="46" stroke-opacity=".3"/>
+              <circle cx="200" cy="125" r="26" stroke-opacity=".5"/>
+              <polygon points="200,98 218,125 200,152 182,125" fill="rgba(212,175,143,.25)" stroke-width="1.4"/>
+              <circle cx="200" cy="125" r="4" fill="currentColor"/>
+            </svg>
+            <div class="map-caption"><span>14 Mercer Lane</span><span>EC2A</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Response expectation -->
+    <section class="section theme-light" aria-labelledby="response-title">
+      <div class="container">
+        <div class="split split--wide-left" style="align-items:start">
+          <div class="reveal">
+            <p class="eyebrow">What happens next</p>
+            <h2 id="response-title" style="font-size:var(--step-4)">A reply within <em>one working day.</em></h2>
+            <p class="lead">Every enquiry is read by a designer, not a call centre. You will hear from a named person who has understood your brief, with initial thoughts and the next sensible step.</p>
+          </div>
+          <ol class="timeline reveal" style="--delay:.12s">
+            <li>
+              <span class="year">Within 1 working day</span>
+              <h3>Personal reply</h3>
+              <p>We acknowledge your brief, answer early questions and suggest a time to talk.</p>
+            </li>
+            <li>
+              <span class="year">Within 3 days</span>
+              <h3>Discovery conversation</h3>
+              <p>A call or studio visit to explore materials, finishes, quantities and budget.</p>
+            </li>
+            <li>
+              <span class="year">Within 10 days</span>
+              <h3>Proposal and samples</h3>
+              <p>A clear written proposal with structural direction, finish swatches and pricing.</p>
+            </li>
+            <li>
+              <span class="year">2 to 3 weeks</span>
+              <h3>First prototype</h3>
+              <p>A hand-built white sample in your hands to test fit, feel and the opening sequence.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-band theme-dark" aria-labelledby="cta-title">
+      <div class="container">
+        <p class="eyebrow" style="justify-content:center">Not ready to write?</p>
+        <h2 id="cta-title" class="reveal">See the work <em>first.</em></h2>
+        <p class="lead reveal">Browse our capabilities and recent commissions, then come back when you know what you would like to make.</p>
+        <div class="btn-row reveal">
+          <a class="btn" href="services.html">Explore our services
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="about.html">Meet the studio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="All Pack, home">
+            <svg class="brand-mark" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+              <rect x="3" y="3" width="34" height="34"/>
+              <path d="M20 8 32 20 20 32 8 20Z"/>
+              <path d="M20 8v24M8 20h24" stroke-opacity=".45"/>
+            </svg>
+            <span class="brand-name">All <span>Pack</span></span>
+          </a>
+          <p>Premium packaging solutions crafted for discerning brands.</p>
+        </div>
+        <div class="footer-col">
+          <h2>Explore</h2>
+          <ul>
+            <li><a data-nav href="index.html">Home</a></li>
+            <li><a data-nav href="about.html">About</a></li>
+            <li><a data-nav href="services.html">Services</a></li>
+            <li><a data-nav href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Services</h2>
+          <ul>
+            <li><a href="services.html">Custom design</a></li>
+            <li><a href="services.html">Materials &amp; sourcing</a></li>
+            <li><a href="services.html">Production &amp; finishing</a></li>
+            <li><a href="services.html#portfolio">Portfolio</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Studio</h2>
+          <address>
+            14 Mercer Lane<br>London EC2A 3QH<br>
+            <a href="mailto:hello@allpack.co">hello@allpack.co</a><br>
+            <a href="tel:+442079460321">+44 20 7946 0321</a>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> All Pack Ltd. All rights reserved.</p>
+        <p>Made by hand, finished by eye.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site.js" defer></script>
+  <script>
+    (function () {
+      var form = document.getElementById('enquiry-form');
+      var thanks = document.getElementById('thanks');
+      var again = document.getElementById('again');
+      if (!form || !thanks) return;
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+        var d = new FormData(form);
+        var lines = [
+          'Name: ' + (d.get('name') || ''),
+          'Brand: ' + (d.get('company') || ''),
+          'Email: ' + (d.get('email') || ''),
+          'Phone: ' + (d.get('phone') || 'not provided'),
+          'Packaging type: ' + (d.get('type') || ''),
+          'Approximate quantity: ' + (d.get('quantity') || 'not specified'),
+          '',
+          'Brief:',
+          d.get('message') || ''
+        ];
+        var subject = 'Project enquiry from ' + (d.get('company') || d.get('name') || 'a new client');
+        var href = 'mailto:hello@allpack.co?subject=' + encodeURIComponent(subject) +
+          '&body=' + encodeURIComponent(lines.join('\n'));
+        form.hidden = true;
+        thanks.hidden = false;
+        thanks.focus();
+        window.location.href = href;
+      });
+
+      if (again) {
+        again.addEventListener('click', function () {
+          form.reset();
+          thanks.hidden = true;
+          form.hidden = false;
+          var first = document.getElementById('f-name');
+          if (first) first.focus();
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
